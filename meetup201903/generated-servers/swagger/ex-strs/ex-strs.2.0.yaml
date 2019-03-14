@@ -1,0 +1,44 @@
+swagger: '2.0'
+info:
+  description: This API will give access example string functions
+  version: 0.0.1
+  title: Example Strings API
+  # termsOfService: ''
+  contact:
+    email: rjj.work@gmail.com
+  # license:
+  #   name: 'MIT'
+tags:
+  - name: strings function example
+    description: example implementation to compare with other code generators
+    # externalDocs:
+    #   description: External API Documentation (TBD)
+    #   url: 'https://github.com/rjj-work/orlando-go/tree/master/meetup201903'
+host: 'localhost'
+basePath: /v0
+schemes:
+  - https
+  - http
+security:
+  - OAuth2: [read]
+securityDefinitions:
+  OAuth2:
+    type: oauth2
+    flow: accessCode
+    authorizationUrl: https://example.com/oauth/authorize
+    tokenUrl: https://example.com/oauth/token
+    scopes:
+      read: Grants read access
+paths:
+  /concat:
+    get:
+      security: []
+      tags:
+        - example
+      summary: concat
+      description: Returns concatenated string of inputs
+      responses:
+        200:
+          description: No problems
+        500:
+          description: Problems.

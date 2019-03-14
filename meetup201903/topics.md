@@ -37,5 +37,5 @@
     1. code generation
 
         ```bash
-        swagger generate server --target . --name strs --spec Strs.2.0.yaml
+        swagger generate server --target . --name ex-strs --spec ex-strs.2.0.yaml
         ```
