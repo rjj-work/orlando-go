@@ -1,3 +1,14 @@
+```
+             __ __ ____     __       _               
+            / _/_ |___ \   / /      | |              
+  ___ _ __ | |_ | | __) | / /__ ___ | |__  _ __ __ _ 
+ / __| '_ \|  _|| ||__ < / / __/ _ \| '_ \| '__/ _` |
+ \__ \ |_) | |  | |___) / / (_| (_) | |_) | | | (_| |
+ |___/ .__/|_|  |_|____/_/ \___\___/|_.__/|_|  \__,_|
+     | |                                             
+     |_|                                             
+```
+
 # Cobra https://github.com/spf13/cobra
 
 ## Install
@@ -53,3 +64,16 @@ gandalf15:ex-strs rjj$ tree
 1 directory, 4 files
 ```
 
+## Tasks
+
+- Implement `concat` command
+-- Do it in a separate package, e.g. `./concat/concat.go` (or `./concat/main.go`)
+
+- Add `join` command
+-- `cobra add join`
+-- Implement it
+-- bonus: provide flag to all user to override separator
+
+
+--------------------------------
+Logo compliments of: [http://patorjk.com/software/taag](http://patorjk.com/software/taag/#p=display&f=Big&t=spf13%2Fcobra)

@@ -1,19 +1,41 @@
 # Something about Go (TBD)
 
-## Possible Topics
 
-- Go Gotcha
-  - pointer vs. non-pointer receiver
-  -- nil receiver possible
-  - return statement with vars not always necessary
-  -- Is this new in Go 1.11.x ?
+## Go Gotcha
+1. pointer vs. non-pointer receiver
+1. nil receiver possible
+1. return statement with vars not always necessary
+   - Is this new in Go 1.11.x ?
 
-- Closure Examples
-  - Checker
-  - Test cleanup: CUT
+## Closure Examples
+1. Checker
+1. Test cleanup: CUT
 
-- Channels
-  - Channel state
-  - Concurrency
-    - Tony Hoare's CSP 1978: http://usingcsp.com/cspbook.pdf
-    - Google I/O 2012 - Go Concurrency Patterns: https://www.youtube.com/watch?v=f6kdp27TYZs
+## Channels
+1. Channel state
+1. Concurrency
+    1. Tony Hoare's CSP 1978: http://usingcsp.com/cspbook.pdf
+    1. Google I/O 2012 - Go Concurrency Patterns: https://www.youtube.com/watch?v=f6kdp27TYZs
+
+## Generated Servers
+
+1. Cobra
+    1. [spf13/cobra](https://github.com/spf13/cobra/blob/master/cobra)
+    1. [spf13/viper](https://github.com/spf13/viper)
+    1. code generation
+
+        ```bash
+        cobra init ex-strs -a 'rjj.work@gmail.com' -l MIT
+        # ... mv used to put generated code where I want it ...
+        cobra add concat
+        ```
+
+1.  Swagger
+    1. [swagger.io](https://swagger.io)
+    1. [swagger editor](https://editor.swagger.io/)
+    1. [Homebrew to install on MacOS](https://brew.sh)
+    1. code generation
+
+        ```bash
+        swagger generate server --target . --name strs --spec Strs.2.0.yaml
+        ```
