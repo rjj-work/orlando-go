@@ -1,3 +1,11 @@
+```                                                                                           ,--.
+ ,---. ,--.   ,--. ,--,--. ,---.  ,---.  ,---. ,--.--..--.     ,---. ,--.  ,--.,-----. ,---.,-'  '-.,--.--. ,---.  
+(  .-' |  |.'.|  |' ,-.  || .-. || .-. || .-. :|  .--''--'    | .-. : \  `'  / '-----'(  .-''-.  .-'|  .--'(  .-'  
+.-'  `)|   .'.   |\ '-'  |' '-' '' '-' '\   --.|  |   .--.    \   --. /  /.  \        .-'  `) |  |  |  |   .-'  `) 
+`----' '--'   '--' `--`--'.`-  / .`-  /  `----'`--'   '--'     `----''--'  '--'       `----'  `--'  `--'   `----'  
+                          `---'  `---'
+```
+
 # Ex-strs server generated with `swagger`
 
 ... TODO: say something here ...
@@ -94,3 +102,6 @@ exit status 1
 gandalf15:ex-strs rjj$ go run cmd/ex-strs-server/main.go --scheme=http
 2019/03/14 09:10:28 Serving ex strs at http://127.0.0.1:56671
 ```
+
+--------------------
+Logo complements of [patorjk.com/software/taag](http://patorjk.com/software/taag/#p=display&f=Soft&t=swagger%3A%20ex-strs)
