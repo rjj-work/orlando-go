@@ -1,12 +1,13 @@
 // Copyright © 2019 Ralph J. Jackson <rjj.work@gmail.com>
 
-
 package cmd
 
 import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+
+	"github.com/rjj-work/orlando-go/meetup201903/generated-servers/cobra/ex-strs/concat"
 )
 
 // concatCmd represents the concat command
@@ -20,7 +21,10 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("concat called")
+		fmt.Printf("concat called args: %v\n", args)
+
+		s := concat.Doit(args)
+		fmt.Println(s)
 	},
 }
 
